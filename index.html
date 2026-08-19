@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chandan Dhumale | SYSTEM INTERFACE</title>
+  <meta name="description" content="System Interface - Chandan Dhumale" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <!-- Global CRT Effects -->
+  <div class="crt-overlay" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <div class="sys-container">
+    
+    <!-- TOP HUD -->
+    <header class="sys-hud-top">
+      <div class="hud-left">
+        <span class="hud-value highlight">48</span>
+        <span class="hud-label">LEVEL</span>
+        <span class="hud-divider">+</span>
+        <span class="hud-value">1,425</span>
+        <span class="hud-label">COINS AWARDED</span>
+      </div>
+      <div class="hud-right">
+        <span class="hud-label">CREDITS</span>
+        <span class="hud-label">SERVER TIME: <span id="serverTime" class="hud-value">00:00:00</span></span>
+        <span class="hud-label">LOCAL TIME: <span id="localTime" class="hud-value">00:00:00</span></span>
+      </div>
+    </header>
+
+    <div class="sys-layout">
+      
+      <!-- LEFT SIDEBAR -->
+      <aside class="sys-sidebar">
+        <div class="avatar-box">
+          <div class="avatar-corners"></div>
+          <canvas id="avatarCanvas" width="120" height="120"></canvas>
+          <div class="avatar-glitch-overlay"></div>
+        </div>
+
+        <div class="side-info-block">
+          <span class="side-label">NAME</span>
+          <span class="side-value highlight-red">CHANDAN DHUMALE</span>
+        </div>
+
+        <div class="side-info-block">
+          <span class="side-label">OCCUPATION</span>
+          <span class="side-value">SECURITY RESEARCHER</span>
+          <span class="side-value">WEB DEVELOPER</span>
+        </div>
+
+        <div class="side-info-block">
+          <span class="side-label">CORPORATION</span>
+          <span class="side-value">LEGACY.AI</span>
+        </div>
+
+        <div class="side-info-block">
+          <span class="side-label">AVAILABILITY</span>
+          <div class="avail-badge">
+            <span class="avail-text">OPEN FOR HIRE</span>
+            <span class="avail-icon">&#9932;</span>
+          </div>
+        </div>
+
+        <div class="side-info-block">
+          <span class="side-label">SOCIAL</span>
+          <a href="https://github.com" target="_blank" class="social-btn">
+            <span class="social-text">GITHUB LINK</span>
+            <span class="social-icon">&#8663;</span>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="social-btn">
+            <span class="social-text">LINKEDIN NET</span>
+            <span class="social-icon">&#8663;</span>
+          </a>
+        </div>
+
+        <div class="motto-block">
+          <span class="side-label">MOTTO:</span>
+          <p class="motto-text">CODE IS POETRY.<br>SECURITY IS REALITY.<br>BREAK TO BUILD.</p>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT AREA -->
+      <main class="sys-main">
+        
+        <!-- VIEW: LOGS (About) -->
+        <section id="view-logs" class="sys-view active">
+          <div class="view-header">
+            <h2 class="view-title">DATA LOG DUMP INITIALIZED.</h2>
+            <p class="view-subtitle">LOCATION: RESEARCH FACILITY, SECTOR 7<br>STATUS: IN DEVELOPMENT</p>
+          </div>
+
+          <div class="logs-grid">
+            <div class="log-entry box-frame">
+              <div class="log-head">
+                <span class="log-title">ORIGIN STORY</span>
+                <span class="log-date">DATE: 2024.08.19</span>
+              </div>
+              <p class="log-body">
+                I have always been fascinated by the endless possibilities of interconnected systems and the ways they can be secured or exploited. I decided to pursue a career in cybersecurity and web engineering to help build innovative, secure, and impactful digital solutions.
+              </p>
+            </div>
+            
+            <div class="log-entry box-frame">
+              <div class="log-head">
+                <span class="log-title">CURRENT DIRECTIVE</span>
+                <span class="log-date">DATE: 2024.08.19</span>
+              </div>
+              <p class="log-body">
+                Throughout my career, I have worked with a wide range of technologies, from front-end frameworks like React and Vue to back-end architectures and penetration testing tools. I am passionate about staying up-to-date with the latest industry threats.
+              </p>
+            </div>
+
+            <div class="log-entry box-frame">
+              <div class="log-head">
+                <span class="log-title">OPERATIONAL GOALS</span>
+                <span class="log-date">DATE: 2024.08.19</span>
+              </div>
+              <p class="log-body">
+                As a security researcher, my top priority is to ensure the reliability and security of web applications. I enjoy collaborating with cross-functional teams and participating in CTF challenges to hone my offensive security skills.
+              </p>
+            </div>
+            
+            <button class="btn-primary mt-4"><span class="btn-icon">&#9635;</span> PREVIEW VISUAL RECORDS</button>
+          </div>
+
+          <div class="older-logs mt-6">
+            <h3 class="side-label mb-2">OLDER LOGS:</h3>
+            <div class="old-log-row"><span class="ol-title">LOG ENTRY: PROJECT DEVELOPMENT UPDATE</span><span class="ol-date">DATE: 2024.07.12</span></div>
+            <div class="old-log-row"><span class="ol-title">LOG ENTRY: NEW RECON SCRIPT DEPLOYED</span><span class="ol-date">DATE: 2024.06.28</span></div>
+            <div class="old-log-row"><span class="ol-title">LOG ENTRY: CTF COMPETITION RESULTS</span><span class="ol-date">DATE: 2024.05.15</span></div>
+            <div class="old-log-row"><span class="ol-title">LOG ENTRY: BETA PROGRAM INITIATED</span><span class="ol-date">DATE: 2024.04.02</span></div>
+          </div>
+        </section>
+
+        <!-- VIEW: QUESTS (Projects) -->
+        <section id="view-quests" class="sys-view">
+          <div class="view-header">
+            <h2 class="view-title">ACTIVE QUESTS & ARCHIVED MISSIONS</h2>
+            <p class="view-subtitle">CLASSIFIED PROJECT BRIEFINGS</p>
+          </div>
+
+          <div class="quests-container">
+            <div class="quest-card box-frame">
+              <div class="quest-status status-active">ACTIVE</div>
+              <h3 class="quest-title">PHANTOM RECON</h3>
+              <p class="quest-desc">An automated reconnaissance framework aggregating OSINT data from multiple sources, identifying vulnerabilities, and generating structured threat reports.</p>
+              <div class="quest-meta">
+                <span class="qm-label">TECH:</span>
+                <span class="qm-value">PYTHON, SHODAN API, SQLITE</span>
+              </div>
+              <div class="quest-rewards">
+                <span class="qr-item">&#9733; +50 XP</span>
+                <span class="qr-item">&#9830; OSINT BADGE</span>
+              </div>
+              <button class="btn-secondary w-full mt-3">ACCESS FILE</button>
+            </div>
+
+            <div class="quest-card box-frame">
+              <div class="quest-status status-complete">COMPLETE</div>
+              <h3 class="quest-title">NULLBYTE SCANNER</h3>
+              <p class="quest-desc">A custom web vulnerability scanner with payload fuzzing, header injection testing, and automated PDF reporting.</p>
+              <div class="quest-meta">
+                <span class="qm-label">TECH:</span>
+                <span class="qm-value">PYTHON, REQUESTS, DOCKER</span>
+              </div>
+              <div class="quest-rewards">
+                <span class="qr-item">&#9733; +75 XP</span>
+                <span class="qr-item">&#9830; SEC BADGE</span>
+              </div>
+              <button class="btn-secondary w-full mt-3">ACCESS FILE</button>
+            </div>
+
+            <div class="quest-card box-frame">
+              <div class="quest-status status-complete">COMPLETE</div>
+              <h3 class="quest-title">CIPHERVAULT</h3>
+              <p class="quest-desc">End-to-end encrypted password manager with zero-knowledge architecture and biometric auth support.</p>
+              <div class="quest-meta">
+                <span class="qm-label">TECH:</span>
+                <span class="qm-value">JS, WEB CRYPTO, INDEXEDDB</span>
+              </div>
+              <div class="quest-rewards">
+                <span class="qr-item">&#9733; +40 XP</span>
+                <span class="qr-item">&#9830; CRYPTO BADGE</span>
+              </div>
+              <button class="btn-secondary w-full mt-3">ACCESS FILE</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- VIEW: ATTRIBUTES (Skills) -->
+        <section id="view-attributes" class="sys-view">
+          <div class="view-header">
+            <h2 class="view-title">AGENT ATTRIBUTES & SKILL TREE</h2>
+            <p class="view-subtitle">PROFICIENCY LEVELS VERIFIED</p>
+          </div>
+          
+          <div class="attributes-grid">
+            <div class="attr-group box-frame">
+              <h3 class="attr-group-title">OFFENSIVE SECURITY</h3>
+              <div class="attr-item">
+                <div class="attr-head"><span class="attr-name">PENETRATION TESTING</span><span class="attr-val">LVL 85</span></div>
+                <div class="attr-bar"><div class="attr-fill" style="width: 85%"></div></div>
+              </div>
+              <div class="attr-item">
+                <div class="attr-head"><span class="attr-name">WEB EXPLOITATION</span><span class="attr-val">LVL 90</span></div>
+                <div class="attr-bar"><div class="attr-fill" style="width: 90%"></div></div>
+              </div>
+              <div class="attr-item">
+                <div class="attr-head"><span class="attr-name">OSINT & RECON</span><span class="attr-val">LVL 80</span></div>
+                <div class="attr-bar"><div class="attr-fill" style="width: 80%"></div></div>
+              </div>
+            </div>
+
+            <div class="attr-group box-frame">
+              <h3 class="attr-group-title">ENGINEERING</h3>
+              <div class="attr-item">
+                <div class="attr-head"><span class="attr-name">PYTHON SCRIPTING</span><span class="attr-val">LVL 88</span></div>
+                <div class="attr-bar"><div class="attr-fill" style="width: 88%"></div></div>
+              </div>
+              <div class="attr-item">
+                <div class="attr-head"><span class="attr-name">JAVASCRIPT / WEB</span><span class="attr-val">LVL 85</span></div>
+                <div class="attr-bar"><div class="attr-fill" style="width: 85%"></div></div>
+              </div>
+              <div class="attr-item">
+                <div class="attr-head"><span class="attr-name">SYSADMIN (LINUX)</span><span class="attr-val">LVL 75</span></div>
+                <div class="attr-bar"><div class="attr-fill" style="width: 75%"></div></div>
+              </div>
+            </div>
+
+            <div class="attr-group box-frame">
+              <h3 class="attr-group-title">TOOLKIT PROCESSES</h3>
+              <ul class="tool-list">
+                <li><span class="tool-status run">RUN</span> Burp Suite Pro</li>
+                <li><span class="tool-status ready">RDY</span> Metasploit Framework</li>
+                <li><span class="tool-status run">RUN</span> Nmap / Masscan</li>
+                <li><span class="tool-status ready">RDY</span> Wireshark</li>
+                <li><span class="tool-status ready">RDY</span> Ghidra</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- VIEW: COMMS (Contact) -->
+        <section id="view-comms" class="sys-view">
+          <div class="view-header">
+            <h2 class="view-title">SECURE TRANSMISSION CHANNEL</h2>
+            <p class="view-subtitle">ESTABLISH DIRECT CONNECTION</p>
+          </div>
+          
+          <div class="comms-layout">
+            <div class="comms-form box-frame">
+              <h3 class="attr-group-title mb-4">TRANSMIT PACKET</h3>
+              <form id="contactForm">
+                <div class="form-group">
+                  <label class="side-label">SENDER_ID (NAME)</label>
+                  <input type="text" class="sys-input" placeholder="ENTER ALIAS..." required />
+                </div>
+                <div class="form-group">
+                  <label class="side-label">RETURN_ADDRESS (EMAIL)</label>
+                  <input type="email" class="sys-input" placeholder="ENTER COMM-LINK..." required />
+                </div>
+                <div class="form-group">
+                  <label class="side-label">PAYLOAD (MESSAGE)</label>
+                  <textarea class="sys-input sys-textarea" rows="6" placeholder="ENTER DATA..." required></textarea>
+                </div>
+                <div class="form-actions mt-4">
+                  <button type="submit" class="btn-primary">SEND MESSAGE [ENTER]</button>
+                  <button type="reset" class="btn-secondary">DISCARD [ESC]</button>
+                </div>
+              </form>
+            </div>
+            
+            <div class="comms-visual">
+              <!-- Animated wireframe geometry will go here -->
+              <canvas id="commsCanvas" width="400" height="400"></canvas>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- RIGHT SIDEBAR (Active Quest / Visualizer) -->
+      <aside class="sys-right-sidebar">
+        <div class="active-quest-panel box-frame">
+          <div class="aq-header">
+            <span class="aq-icon">&#9672;</span> ACTIVE QUEST
+          </div>
+          <div class="side-info-block mt-3">
+            <span class="side-label">QUEST NAME</span>
+            <span class="side-value highlight-red" style="font-size:1.1rem">PORTFOLIO V3 OVERHAUL</span>
+          </div>
+          <div class="side-info-block mt-3">
+            <span class="side-label">GOAL</span>
+            <p class="aq-desc">Design and implement a fully responsive game/sci-fi interface portfolio using pure HTML/CSS/JS. Elements must look deeply nested and complex.</p>
+          </div>
+          <div class="side-info-block mt-3">
+            <span class="side-label">REWARDS</span>
+            <div class="quest-rewards">
+              <span class="qr-item">&#9733; +100 XP</span>
+              <span class="qr-item">&#9830; UI/UX BADGE</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sys-settings mt-auto">
+          <div class="setting-row">
+            <span class="side-label">SOUND EFFECTS</span>
+            <span class="setting-box checked">&#10003;</span>
+          </div>
+          <div class="setting-row">
+            <span class="side-label">MUSIC</span>
+            <span class="setting-box">&#10007;</span>
+          </div>
+          <div class="setting-row">
+            <span class="side-label">VISUAL SETTINGS</span>
+            <span class="setting-box">&#9881;</span>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+
+    <!-- BOTTOM NAVIGATION TABS -->
+    <footer class="sys-nav-bottom">
+      <div class="nav-tabs">
+        <button class="nav-tab active" data-target="view-logs">
+          <span class="tab-bracket">[</span>
+          <span class="tab-text">LOGS</span>
+          <span class="tab-bracket">]</span>
+          <span class="tab-sub">DATA LOG DUMP INITIALIZED</span>
+        </button>
+        <button class="nav-tab" data-target="view-quests">
+          <span class="tab-bracket">[</span>
+          <span class="tab-text">QUESTS</span>
+          <span class="tab-bracket">]</span>
+          <span class="tab-sub">PROJECT DIRECTORY</span>
+        </button>
+        <button class="nav-tab" data-target="view-attributes">
+          <span class="tab-bracket">[</span>
+          <span class="tab-text">ATTRIBUTES</span>
+          <span class="tab-bracket">]</span>
+          <span class="tab-sub">SKILL & PROFICIENCY</span>
+        </button>
+        <button class="nav-tab" data-target="view-comms">
+          <span class="tab-bracket">[</span>
+          <span class="tab-text">COMMS</span>
+          <span class="tab-bracket">]</span>
+          <span class="tab-sub">SECURE TRANSMISSION</span>
+        </button>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
